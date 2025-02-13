@@ -218,7 +218,7 @@ download_agent() {
 
 # 下载内核
 download_kernel() {
-  if [ $NO_KERNEL ]; then
+  if [ "$NO_KERNEL" = "true" ]; then
     return 0
   fi
 
@@ -238,7 +238,7 @@ download_kernel() {
 
 # 下载字体
 download_fonts() {
-  if [ $NO_FONTS ]; then
+  if [ "$NO_FONTS" = "true" ]; then
     return 0
   fi
 
